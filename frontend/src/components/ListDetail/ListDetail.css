@@ -1,0 +1,16 @@
+.card-content{
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
