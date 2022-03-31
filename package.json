@@ -1,6 +1,9 @@
 {
   "name": "food-traveler",
   "version": "0.1.0",
+  "engines": {
+    "node": "14.18.0"
+  },
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.1.1",
