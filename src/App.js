@@ -16,8 +16,6 @@ import MapView from './components/MapView/MapView';
 // import SearchSumm from './components/Search/SearchSumm/SearchSumm';
 
 
-
-
 function App() {
   const [lists, setLists] = useState([]);
   const[url, setUrl] = useState();
@@ -25,16 +23,16 @@ function App() {
   const[client, setClient] = useState('')
   
   //AllLists
-  let getLists = async() => {
-    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
-    let data = await fetch(`${url}`)
-    let json = await data.json();
-      setLists(json);
-      console.log(json)
-  }
+  // let getLists = async() => {
+  //   const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
+  //   let data = await fetch(`${url}`)
+  //   let json = await data.json();
+  //     setLists(json);
+  //     console.log(json)
+  // }
 
   useEffect(() => {
-    getLists();
+    // getLists();
 
 
   const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
