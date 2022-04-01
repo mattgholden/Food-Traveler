@@ -36,12 +36,12 @@ function App() {
 
 
   const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
-  setUrl(url)
   fetch(url)
     .then((response) => response.json())
     .then(data => {
       setLists(data)
     })
+    setUrl(url)
   }, []);
 
   let addList = (newList) => {
