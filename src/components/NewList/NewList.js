@@ -14,7 +14,7 @@ const NewList = ({addList}) => {
     
     let handleSubmit = async(e) =>{
       e.preventDefault()
-      const url = 'http://localhost:8000/toEatList'
+      const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
       let response = await fetch(`${url}`, {
         method: "POST",
         body: JSON.stringify(list),
@@ -33,10 +33,6 @@ const NewList = ({addList}) => {
       setList({...list, [e.target.id]:e.target.value})
     }
 
-  //   const search = (term, location) => {
-  //     const url
-  //     history.push(`/search?find_desc=${urlEncodedTerm}&find_loc=${urlEncodedLocation}`)
-  // }
 
   return (
     <div className='body body-newList' style={{alignContent:'left'}}>
@@ -56,7 +52,6 @@ const NewList = ({addList}) => {
               <input type="date" className="form-control" id="endDateOfTravel" name="endDateOfTravel" onChange={handleChange}/>
             </div> 
           </div>
-          {/* <Form.Control type="date" id="datesOfTravel" name="datesOfTravel" placeholder="Enter new travel dates" onChange={handleChange}></Form.Control> */}
         </group>
         <Form.Group>
           <Form.Label>Duration of Travel: </Form.Label>

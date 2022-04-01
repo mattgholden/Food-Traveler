@@ -1,28 +1,28 @@
-.input{
+/* .input{
     display: flex;
     /* min-width: 200px; */
-    justify-content: center;
-}
+    /* justify-content: center;
+} */
 
-.p-control{
+/* .p-control{
     display: flex;
     justify-content: center;
-}
-
+} */
+/* 
 .search-button{
     margin: 0%;
-}
+} */
 
-:global(.button).search-button{
+/* :global(.button).search-button{
     background: rgb(29, 109, 29);
     border: none;
-}
+} */
 
-:global(.icon){
+/* :global(.icon){
     color:white;
-}
+} */
 
-.field{
+/* .field{
     display: flex;
     justify-content: center;
-}
+} */
