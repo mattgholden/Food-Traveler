@@ -22,7 +22,7 @@ const Login = ({client, setClient}) => {
   }
 
   let handleSubmit = (e) =>{
-    const url = 'https://foodtraveler.herokuapp.com'
+    const url = 'http://foodtraveler.herokuapp.com'
     e.preventDefault()
     fetch(`${url}/session/login`, {
       method: "POST",

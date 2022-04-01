@@ -19,7 +19,7 @@ const Register = ({setClient}) => {
   let navigate = useNavigate()
 
   let handleSubmit = (e) => {
-    const url = 'https://foodtraveler.herokuapp.com'
+    const url = 'http://foodtraveler.herokuapp.com'
     e.preventDefault()
     fetch(`${url}/session/register`, {
       method: "POST",
