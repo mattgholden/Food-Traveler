@@ -29,7 +29,7 @@ const Login = ({client, setClient}) => {
       mode:'no-cors',
       body: JSON.stringify(loggedInUser),
       headers: {
-        'Access-Control-Allow-Origin':'*',
+        'Access-Control-Allow-Origin':null,
         'Content-Type':'application/json'
       }
     })
