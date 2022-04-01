@@ -22,7 +22,7 @@ const Login = ({client, setClient}) => {
   }
 
   let handleSubmit = (e) =>{
-    const url = 'https://foodtraveler.herokuapp.com'
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
     e.preventDefault()
     fetch(`${url}/session/login`, {
       method: "POST",
