@@ -26,7 +26,8 @@ function App() {
   
   //AllLists
   let getLists = async() => {
-    let data = await fetch('http://localhost:8000/toEatList')
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
+    let data = await fetch(`${url}`)
     let json = await data.json();
       setLists(json);
       console.log(json)
