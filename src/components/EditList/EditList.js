@@ -15,7 +15,7 @@ const EditList = () => {
   let navigate = useNavigate()
 
   useEffect(() => {
-    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList/'
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/toEatList/'
     const editDetails = async() => {
       let listResponse = await fetch(`${url}/${params}`)
       let json = await listResponse.json()
@@ -29,7 +29,7 @@ const EditList = () => {
   }
 
   let handleSubmit = async(e) => {
-    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/toEatList'
     e.preventDefault()
     let response = await fetch(`${url}/edit/${id}`, {
       method: "PUT",

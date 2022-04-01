@@ -35,7 +35,7 @@ function App() {
     // getLists();
 
 
-  const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
+  const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/toEatList'
   fetch(url)
     .then((response) => response.json())
     .then(data => {

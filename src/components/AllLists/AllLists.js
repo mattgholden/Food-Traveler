@@ -30,7 +30,7 @@ const AllLists = ({lists, setLists, list, setList, client, setClient}) => {
 
     let navigate = useNavigate()
         const logOut = () => {
-        const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000'
+        const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000'
             fetch(`${url}/session/logout` , {
                 method: "GET",
                 body: null,
