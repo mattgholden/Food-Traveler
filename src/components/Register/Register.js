@@ -19,7 +19,7 @@ const Register = ({setClient}) => {
   let navigate = useNavigate()
 
   let handleSubmit = (e) => {
-    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/'
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com' : 'http://localhost:8000'
     e.preventDefault()
     fetch(`${url}/session/register`, {
       method: "POST",
