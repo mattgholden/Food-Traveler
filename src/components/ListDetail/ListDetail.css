@@ -1,16 +1,44 @@
-.card-content{
+/* .card-info{
     display: flex;
+    /* justify-content: center; 
+    text-align:end;
+} */
+
+.list-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     justify-content: center;
-    text-align: justify;
+    margin: 6rem;
+    padding: 5rem;
 }
 
-.button{
+.list-container{
     display: flex;
-    justify-content: center;
-    margin-right: 1rem;
+    flex-direction: column;
+    text-align:left;
+    /* align-items: left; */
+    justify-content: space-around;
+    background-color: #ffffff8d;
+    color: rgb(9, 9, 9);
+    position: absolute;
+    border: 4px solid #2f94e1;
+    margin-top: 10%;
+    min-height: 20vh;
+    margin: 12px;
+    z-index: 2;
+    top: 25%;
+    left: 35%;
+    right: 20%;
+    width: 30%;
+    padding: 20px;
 }
 
-.header{
-    display: flex;
-    justify-content: center;
+.list-body{
+    background-image: url(../../img/foodworld.jpeg); 
+    /* background-size: "cover"; */
+    height: 100vh;
+    margin-top: -70px;
+    font-size:50px;
+    filter: blur(4px);
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 import './NavBar.css'
-import FoodTravelLogo from '../../FoodTravelLogo.png'
+import FoodTravelLogo from '../../img/FoodTravelLogo.png'
 import { Link } from 'react-router-dom'
 import { useNavigate } from 'react-router';
 
@@ -25,7 +25,7 @@ const NavBar = () => {
         </div>
         <div id="navbarExampleTransparentExample" className="navbar-menu">
           <div className="navbar-start">
-            <Link className="navbar-item" to="/mapview">
+            <Link className={`navbar-item`} to="/mapview">
               Food Traveler
             </Link>
         </div>

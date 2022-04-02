@@ -9,14 +9,10 @@ export function Welcome() {
 
 return (
     <div>
-      <div className='welcome-background'></div>  
+      <div className='welcome-body'></div>  
       <div>
-        <h1 className='header'>Welcome!  Register to create an account and begin creating your "ToEat Lists"!</h1>
+        <h1 className='header'>Welcome, Food Travelers!  Here we aim to help make planning great meals while traveling easier.  Go ahead and get started planning your ToEat Lists by logging in or creating an account!</h1>
       </div>
-        {/* <NavBar /> */}
-        {/* <img src={logo} className={styles.logo} alt="logo" /> */}
-        {/* <div><Search/></div> */}
-        {/* <SearchResults /> */}
     </div>
   );
 }

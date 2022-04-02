@@ -5,6 +5,7 @@ import { Combobox, ComboboxInput, ComboboxPopover, ComboboxList, ComboboxOption 
 import { formatRelative } from "date-fns";
 import "@reach/combobox/styles.css";
 import mapStyles from "./Mapstyles";
+import "./Map.css"
 
 const libraries = ["places"];
 const mapContainerStyle = {
@@ -14,7 +15,6 @@ const mapContainerStyle = {
 
 const options = {
   styles: mapStyles,
-  // disableDefaultUI: true,
   zoomControl: true,
   streetViewControl: true,
 };
@@ -67,6 +67,7 @@ const MapView = () => {
         </span>
       </h1>
 
+      {/* Map goes to location */}
       <Locate panTo={panTo} />
       <Search panTo={panTo} />
 
@@ -112,27 +113,27 @@ const MapView = () => {
   );
 }
 
+// Find the location
 const Locate = ({ panTo }) => {
   return (
-    <button
-      className="locate"
-      onClick={() => {
-        navigator.geolocation.getCurrentPosition(
-          (position) => {
-            panTo({
-              lat: position.coords.latitude,
-              lng: position.coords.longitude,
+    <button className="locate" onClick={() => {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          panTo({
+            lat: position.coords.latitude,
+            lng: position.coords.longitude,
             });
           },
           () => null
         );
       }}
     >
-      <i className={`fa-solid fa-compass ${'locate'}`}></i>
+       <img src='compass4.1.22.png' alt="compass-to locate"/>
     </button>
   );
 }
 
+//Set the search starting point and radius
 const Search = ({ panTo }) => {
   const { ready, value, suggestions: { status, data },setValue, clearSuggestions,
   } = usePlacesAutocomplete({

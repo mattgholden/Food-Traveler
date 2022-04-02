@@ -1,0 +1,66 @@
+.all-list-body{
+    background-image: url(../../img/foodworld.jpeg); 
+    /* background-size: "cover"; */
+    height: 100vh;
+    margin-top: -70px;
+    font-size:50px;
+    /* filter: blur(0px); */
+}
+
+.all-lists{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 10%;
+}
+
+.logout {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content:right;
+    min-height: 60vh;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+
+.button-add-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 4vh;
+    margin-top: 5%;
+} 
+
+.all-list-button{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 6rem;
+    padding: 5rem;
+}
+
+.all-list-container{
+    display: flex;
+    flex-direction: column;
+    text-align:left;
+    /* align-items: left; */
+    justify-content: space-around;
+    background-color: #ffffff8d;
+    color: rgb(9, 9, 9);
+    position: absolute;
+    border: 4px solid #2f94e1;
+    margin-top: 10%;
+    min-height: 20vh;
+    margin: 12px;
+    z-index: 2;
+    top: 25%;
+    left: 35%;
+    right: 25%;
+    width: 50%;
+    padding: 20px;
+}
