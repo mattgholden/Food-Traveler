@@ -16,8 +16,8 @@ const ListDetail = ({setLists}) => {
   
     useEffect(()=> {
       const showDetails = async() => {
-        const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/toEatList/'
-        let listResponse = await fetch(`${url}${id}`)
+        const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000'
+        let listResponse = await fetch(`${url}/toEatList/details/${id}`)
         let json = await listResponse.json()
         setList(json)
       }
@@ -27,7 +27,7 @@ const ListDetail = ({setLists}) => {
     //DELETE
     let deleteList = async(list) => {
         const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000'
-        let data = await fetch(`${url}/toEatList/${id}`, {
+        let data = await fetch(`${url}/toEatList/details/${id}`, {
             method:'DELETE',
             body: null,
             headers:{
