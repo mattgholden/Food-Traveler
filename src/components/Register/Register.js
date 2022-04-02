@@ -24,7 +24,7 @@ const Register = ({setClient}) => {
     fetch(`${url}/session/register`, {
       method: "POST",
       body: JSON.stringify(createUser),
-      credentials: 'include',
+      // credentials: 'include',
       headers:{
         'Content-Type':'application/json'
       }
