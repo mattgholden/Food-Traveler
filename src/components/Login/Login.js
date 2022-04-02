@@ -1,7 +1,7 @@
 import React from 'react';
 import{ useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import {Button} from 'react-bootstrap';
+import { Form, Button, Card} from 'react-bootstrap';
 
 
 const Login = ({client, setClient}) => {
@@ -53,18 +53,23 @@ const Login = ({client, setClient}) => {
   return (
     <div>
       <h2>Log In</h2>
-      <form className="form" onSubmit={handleSubmit}>
-        <div className="input">
-          <label htmlFor="username" style={{fontWeight:'bold', color:'white'}}>Username:</label>
-          <input type="text" id="username" name="username" placeholder="Ex: Phil" onChange={handleChange} ></input>
-        </div>
-        <div className="input">
-          <label htmlFor="password" style={{fontWeight:'bold', color:'white'}}>Password:</label>
-          <input type="password" id="password" name="password" placeholder="Ex:583%aGc9" onChange={handleChange} ></input>
-        </div>
-        <Button className="submit-button" value="submit" type="submit" variant="dark">Submit</Button>
-        <p style={{fontWeight: 'bold', color:'white'}}>{message}</p>
-      </form>
+      <Card className="mb-3" style={{width: '21rem' , height: '22rem'}}>
+        <Card.Body className="mb-2" style={{width: '20rem'}}>
+        <Form onSubmit={handleSubmit} method="POST">
+          <Form.Group className="mb-3">
+            <Form.Label className="label">Username: </Form.Label>
+            <Form.Control type="text" id="username" name="username" placeholder="Ex: Phil" onChange={handleChange}></Form.Control>
+          </Form.Group>
+          <Form.Group className="mb-3">
+          <Form.Label className="label">Password:</Form.Label>
+              <Form.Control type="password" id="password" name="password" placeholder="Ex:583%aGc9" onChange={handleChange}>
+              </Form.Control>
+          </Form.Group>
+          <Button size="lg" className="submit-button" value="submit" type="submit" variant="dark">Submit</Button>
+            <p>{message}</p>
+        </Form>
+      </Card.Body>
+      </Card>
     </div>
   )
 }

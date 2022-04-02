@@ -39,7 +39,7 @@ const EditList = () => {
     })
     let r = await response.json()
     console.log(r)
-    // if(r) setParams(r._id)
+    if(r) setParams(r._id)
     navigate(`/lists/details/${id}`)
   }
 
