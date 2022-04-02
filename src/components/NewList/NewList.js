@@ -60,7 +60,7 @@ const NewList = ({addList}) => {
         <Form.Group>
           <Form.Label>Restaurants to Try: </Form.Label>
           <Form.Control type="text" id="restaurantName" name="restaurantName" placeholder="Enter restaurants to try" onChange={handleChange}></Form.Control>
-          <Link to='/search'>Search Restaurants</Link>
+          <Link to='/mapview'>Search Restaurants</Link>
         </Form.Group>
         <Button size="lg" className="editList-button" type ="submit" variant="dark">
           Add New List
