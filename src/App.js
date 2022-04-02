@@ -22,17 +22,17 @@ function App() {
   console.log(url)
   const[client, setClient] = useState('')
   
-  //AllLists
-  // let getLists = async() => {
-  //   const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler.herokuapp.com/' : 'http://localhost:8000/toEatList'
-  //   let data = await fetch(`${url}`)
-  //   let json = await data.json();
-  //     setLists(json);
-  //     console.log(json)
-  // }
+  // AllLists
+  let getLists = async() => {
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com/' : 'http://localhost:8000/toEatList'
+    let data = await fetch(`${url}`)
+    let json = await data.json();
+      setLists(json);
+      console.log(json)
+  }
 
   useEffect(() => {
-    // getLists();
+    getLists();
 
 
   const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/toEatList'
