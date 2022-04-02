@@ -75,6 +75,7 @@ const NewList = ({addList}) => {
             <label className="label">Restaurants to Try: </label>
             <div className="control">
               <input className={`input is-medium ${'input-form'}`} type="text" id="restaurantName" name="restaurantName" placeholder="Enter restaurants to try" onChange={handleChange}/>
+              <Link to={'/mapview'}>Search for Restaurants</Link>
             </div>
           </group>
         </div>
