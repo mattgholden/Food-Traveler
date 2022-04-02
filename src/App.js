@@ -9,11 +9,9 @@ import ListDetail from './components/ListDetail/ListDetail';
 import Login from './components/Login/Login';
 import NewList from './components/NewList/NewList';
 import Register from './components/Register/Register';
-// import Search from './components/Search/Search';
-// import SearchBar from './components/SearchBar/SearchBar'
 import NavBar from './components/NavBar/NavBar';
 import MapView from './components/MapView/MapView';
-// import SearchSumm from './components/Search/SearchSumm/SearchSumm';
+
 
 
 function App() {
@@ -53,7 +51,6 @@ function App() {
     <div className="App">
       <main>
         <NavBar/>
-        {/* <Search/> */}
         <Routes>
           <Route path="/" element={<Welcome/>}></Route>
           <Route path="/lists" element={<AllLists lists={lists} setLists={setLists} client={client} setClient={setClient}/>}></Route>

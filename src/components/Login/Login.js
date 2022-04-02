@@ -22,8 +22,8 @@ const Login = ({client, setClient}) => {
   }
 
   let handleSubmit = (e) =>{
-    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000'
     e.preventDefault()
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000'
     fetch(`${url}/session/login`, {
       method: "POST",
       mode:'no-cors',
@@ -42,7 +42,7 @@ const Login = ({client, setClient}) => {
       console.log(data)
       if(data.status === 200){
         setClient(loggedInUser.username)
-        navigate('/lists')
+        navigate('/toEatList')
       } else if (data.status === 400){
         setMessage(data.message)
         console.log(message)
