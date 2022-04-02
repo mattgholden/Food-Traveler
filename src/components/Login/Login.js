@@ -8,9 +8,9 @@ const Login = ({client, setClient}) => {
   const [user, setUser] = useState({
     username: '',
     password: '',
-    confirmPassword: '',
-    valid: null
-  })
+    // confirmPassword: '',
+    // valid: null
+  });
 
   const[loggedInUser, setLoggedInUser] = useState(user)
   const[message, setMessage] = useState('')
@@ -26,7 +26,7 @@ const Login = ({client, setClient}) => {
     const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000'
     fetch(`${url}/session/login`, {
       method: "POST",
-      mode:'no-cors',
+      // mode:'no-cors',
       body: JSON.stringify(loggedInUser),
       headers: {
         'Access-Control-Allow-Origin':'*',
@@ -42,7 +42,7 @@ const Login = ({client, setClient}) => {
       console.log(data)
       if(data.status === 200){
         setClient(loggedInUser.username)
-        navigate('/toEatList')
+        navigate('/lists')
       } else if (data.status === 400){
         setMessage(data.message)
         console.log(message)

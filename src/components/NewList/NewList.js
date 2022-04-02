@@ -14,7 +14,7 @@ const NewList = ({addList}) => {
     
     let handleSubmit = async(e) =>{
       e.preventDefault()
-      const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com/' : 'http://localhost:8000/toEatList'
+      const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/toEatList'
       let response = await fetch(`${url}`, {
         method: "POST",
         body: JSON.stringify(list),
@@ -37,7 +37,6 @@ const NewList = ({addList}) => {
   return (
     <div className='body body-newList' style={{alignContent:'left'}}>
       <h1>New ToEat List</h1>
-      {/* <SearchBar search={search} />    */}
       <Form onSubmit={handleSubmit}>
         <Form.Group>
           <Form.Label>Destination: </Form.Label>
