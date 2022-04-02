@@ -36,7 +36,7 @@ const ListDetail = ({setLists}) => {
         })
         let remainingLists = await data.json()
         setLists(remainingLists)
-        navigate('/lists')
+        // navigate('/lists')
     }
 
     //To Edit Page
@@ -60,7 +60,7 @@ const ListDetail = ({setLists}) => {
         </div>
         <div className={`field ${'button'}`}>
             <footer className="card-footer">
-              <button className="button is-link" onClick={handleClick}>
+              <button className="button" onClick={handleClick}>
               ✍️ Edit
               </button>
             </footer>
