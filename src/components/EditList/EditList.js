@@ -9,19 +9,19 @@ const EditList = () => {
   
 
   let{id} = useParams()
-  const[params, setParams] = useState(id)
+  // const[params, setParams] = useState(id)
  
   let navigate = useNavigate()
 
   useEffect(() => {
-    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/toEatList/'
+    const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000/'
     const editDetails = async() => {
-      let listResponse = await fetch(`${url}/details/${params}`)
+      let listResponse = await fetch(`${url}toEatList/details/${id}`)
       let json = await listResponse.json()
       setList(json)
     }
     editDetails()
-}, [])
+}, [id])
 
   let handleChange = (e) => {
     setList({...list, [e.target.id]:e.target.value})
