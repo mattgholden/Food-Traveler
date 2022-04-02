@@ -24,3 +24,8 @@ yarn-debug.log*
 yarn-error.log*
 
 Work-with-Yelp-TBC
+
+/SearchBar
+./components/Search.js
+
+
