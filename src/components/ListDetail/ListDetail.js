@@ -7,9 +7,9 @@ import './ListDetail.css';
 
 const ListDetail = ({setLists}) => {
   
-    let listInFocus = (e) => {
-        console.log(e.target)
-    }
+    // let listInFocus = (e) => {
+    //     console.log(e.target)
+    // }
     const [list, setList] = useState({});
     let {id} = useParams()
     let navigate = useNavigate()
@@ -36,11 +36,11 @@ const ListDetail = ({setLists}) => {
         })
         let remainingLists = await data.json()
         setLists(remainingLists)
-        // navigate('/lists')
+        navigate('/lists')
     }
 
     //To Edit Page
-    let handleClick = async() => {
+    let handleMouseClick = async() => {
       navigate (`/lists/edit/${id}`)
     }
 
@@ -60,7 +60,7 @@ const ListDetail = ({setLists}) => {
         </div>
         <div className={`field ${'button'}`}>
             <footer className="card-footer">
-              <button className="button" onClick={handleClick}>
+              <button className="button" onClick={handleMouseClick}>
               ✍️ Edit
               </button>
             </footer>
