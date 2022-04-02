@@ -1,7 +1,7 @@
 import React from 'react';
+import './Welcome.css';
 // import NavBar from './NavBar/NavBar';
-// import logo from '../assets/logo.png';
-// import Search from './Search/Search';
+
 
 
 export function Welcome() {
@@ -9,7 +9,10 @@ export function Welcome() {
 
 return (
     <div>
-        Welcome!
+      <div className='welcome-background'></div>  
+      <div>
+        <h1 className='header'>Welcome!  Register to create an account and begin creating your "ToEat Lists"!</h1>
+      </div>
         {/* <NavBar /> */}
         {/* <img src={logo} className={styles.logo} alt="logo" /> */}
         {/* <div><Search/></div> */}

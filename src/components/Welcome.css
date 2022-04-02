@@ -1,0 +1,24 @@
+.welcome-background{
+    background-image: url(/src/foodworld.jpeg); 
+    background-size: "cover";
+    height: 100vh;
+    margin-top: -70px;
+    font-size:50px;
+    /* background-repeat:no-repeat; */
+    filter: blur(4px);
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff8d;
+    color: salmon;
+    position: absolute;
+    border: 4px solid #2f94e1;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    width: 30%;
+    padding: 20px;
+}
