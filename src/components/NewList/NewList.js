@@ -18,7 +18,7 @@ const NewList = ({addList}) => {
 
     let navigate = useNavigate()
   
-    
+    //Submit the form
     let handleSubmit = async(e) =>{
       e.preventDefault()
       const url = process.env.REACT_APP_ENV === 'production' ? 'https://foodtraveler-backend.herokuapp.com' : 'http://localhost:8000'

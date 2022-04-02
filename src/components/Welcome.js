@@ -1,8 +1,5 @@
 import React from 'react';
 import './Welcome.css';
-// import NavBar from './NavBar/NavBar';
-
-
 
 export function Welcome() {
 
