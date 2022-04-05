@@ -1,47 +1,92 @@
 # Food-Traveler
+----------------
 
-### Your project idea 
- I will be creating an application called _Food Traveler_, that allows users to plan where to eat while they travel. My idea is to allow users to log in and enter the country and/or city they plan to travel to then display a map with popular restaurants. The users can create a "To Eat List" then add the restaurants they prefer to the list.  Once the list is created users can add, make updates, or delete.
+### Application Story
+ Welcome to _Food Traveler_, an application that allows users to plan where to eat before and/or while they travel.  This idea came aboute while I was pondering how to combine two of my favorite things...food and travel.  Users can create an account, log in, and create a "ToEat List" for their upcoming travels.  If needed the user can also edit or delete the lists.  What may be the most useful tool is on the map page, where users can view and search locations, restaurants, etc...  This is a great tool to get ideas for popular restaurants to try.  The application can be viewed here [Food-Traveler] (https://foodtraveler.herokuapp.com/).
+ [Backend Repo](https://github.com/mattgholden/Food-Traveler-Backend)
 
-### Your tech stack (frontend, backend, database)
-React, NodeJS, Express, MongoDB, Mapbox || Google Maps
+### Technologies
+-----------------
+Frontend: 
+- React
+- Google Maps API
+- Bulma & Bootstrap for styling
 
-### List of backend models and their properties
-**Users**
+Backend: 
+- Node.js
+- Express Framework
+
+Database: 
+- MongoDB
+- Mongoose
+
+### Models and their properties
+**User**
 - Username/email
 - Password
 
-**Restaurants**
-- Name
-- Location/city
-
 **ToEatList**
 - Destination
-- Date(s) of Travel
+- Start Date of Travel
+- End Date of Travel
+- Duration
 - Restaurant Name
-- Days
+- Owner
 
-### React component hierarchy (if applicable)
-- Login
+### React Component Hierarchy
+
 - Register
-- Welcome/Landing
-- Map
-- NewToEatList
-- EditToEatList
+- AllLists
+- EditList
+- ListDetail
+- Login
+- MapView
+- NavBar
+- NewList
+- Register
+- Welcome
 
-### User stories
+### Unsolved Problems / Next Steps
+- Using the Yelp Fusion API.  I would like to try to implement it into this application.
+- Allow users to share lists with each other.
+- Log in / log out conditional.
 
-- As a user, I should be able to register an account
-- As a user, I should be able to log in and logout
-- As a user, I should be able to view a map of popular restaurants in the city/country/location I am traveling to.
-- As a user, I should be able to create a "To Eat" list, view the list, update the list, and delete the list.
+### Hurdles
+- Styling with Bulma and I would like to learn more features.
+- Learning how to use different features in Google Map's API.
+- Deployment - I need to make sure to keep the frontend and backend repositories separate.  Also carefully review the URLs to make sure the backend is properly connected to the frontend.
+
+
+
+### Application Views
+----------------------
+![Welcome Page]()
+
+![Register]()
+
+![Add New ToEat List]()
+
+![ToEat List Details]()
+
+![ToEat List Edit Page]()
+
+![Map Page]()
+
+
+### Resources
+- ![MDN](https://developer.mozilla.org/en-US/)
+- ![GeeksforGeeks](https://www.geeksforgeeks.org/)
+- ![React Docs](https://reactjs.org/)
+- ![Bulma Docs](https://bulma.io/)
+- ![Bootstrap Docs](https://react-bootstrap.github.io/)
+- ![Leigh Halliday - YouTube](https://www.youtube.com/)
+
+
 
 ### Wireframes
 ![Map Wireframe](https://media.git.generalassemb.ly/user/38857/files/7d9bac00-a4b6-11ec-8986-636d8089dfb8)
 
 ![ToEat List Wireframe](https://media.git.generalassemb.ly/user/38857/files/31516b80-a4b8-11ec-91da-e81b2d9ad395)
 
-### Anything else your squad lead should know
-Stretch: I would like to try to use multer or cloudinary and maybe add a feature so when a restaurant is clicked it populates the ToEat List.
-[Repo](https://github.com/mattgholden/Food-Traveler)
+
 

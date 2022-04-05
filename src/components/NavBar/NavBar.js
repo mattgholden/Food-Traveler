@@ -19,13 +19,13 @@ const NavBar = () => {
     return (
       <nav className="navbar is-info">
        <div className="navbar-brand">
-        <Link className="navbar-item"to="/">
+        <Link className="navbar-item"to="/mapview">
            <img src={FoodTravelLogo} className='logo' alt='Food Traveler Logo'/>
          </Link>
         </div>
         <div id="navbarExampleTransparentExample" className="navbar-menu">
           <div className="navbar-start">
-            <Link className={`navbar-item`} to="/mapview">
+            <Link className={`navbar-item`} to="/">
               Food Traveler
             </Link>
         </div>
