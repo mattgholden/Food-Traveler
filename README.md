@@ -83,12 +83,3 @@ Database:
 - [Bootstrap Docs](https://react-bootstrap.github.io/)
 - [Leigh Halliday - YouTube](https://www.youtube.com/)
 
-
-
-### Wireframes
-![Map Wireframe](https://media.git.generalassemb.ly/user/38857/files/7d9bac00-a4b6-11ec-8986-636d8089dfb8)
-
-![ToEat List Wireframe](https://media.git.generalassemb.ly/user/38857/files/31516b80-a4b8-11ec-91da-e81b2d9ad395)
-
-
-
