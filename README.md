@@ -2,7 +2,7 @@
 ----------------
 
 ### Application Story
- Welcome to _Food Traveler_, an application that allows users to plan where to eat before and/or while they travel.  This idea came aboute while I was pondering how to combine two of my favorite things...food and travel.  Users can create an account, log in, and create a "ToEat List" for their upcoming travels.  If needed the user can also edit or delete the lists.  What may be the most useful tool is on the map page, where users can view and search locations, restaurants, etc...  This is a great tool to get ideas for popular restaurants to try.  The application can be viewed here [Food Traveler](https://foodtraveler.herokuapp.com/).
+ Welcome to _Food Traveler_, an application that allows users to plan where to eat before and/or while they travel.  This idea came about while I was pondering how to combine two of my favorite things...food and travel.  Users can create an account, log in, and create a "ToEat List" for their upcoming travels.  If needed the user can also edit or delete the lists.  What may be the most useful tool is on the map page, where users can view and search locations, restaurants, etc...  This is a great tool to get ideas for popular restaurants to try.  The application can be viewed here [Food Traveler](https://foodtraveler.herokuapp.com/).
  [Backend Repo](https://github.com/mattgholden/Food-Traveler-Backend)
 
 ### Technologies
