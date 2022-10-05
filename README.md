@@ -46,10 +46,9 @@ Database:
 - Register
 - Welcome
 
-### Unsolved Problems / Next Steps
+### Next Steps
 - Using the Yelp Fusion API.  I would like to try to implement it into this application.
 - Allow users to share lists with each other.
-- Log in / log out conditional.
 
 ### Hurdles
 - Styling with Bulma and I would like to learn more features.
